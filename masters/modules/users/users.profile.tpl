@@ -7,7 +7,7 @@
 		<form action="{USERS_PROFILE_FORM_SEND}" method="post" enctype="multipart/form-data" name="profile" class="form-horizontal">
 			<input type="hidden" name="userid" value="{USERS_PROFILE_ID}" />
 			<!-- IF {USERS_PROFILE_GROUPSELECT} -->
-			<div class="form-group row<!-- IF !{PHP.cfg.plugin.usergroupselector.allowchange} AND {PHP.cfg.plugin.usergroupselector.required} --> class="sr-only"<!-- ENDIF -->">
+			<div class="form-group row<!-- IF !{PHP.cfg.plugin.usergroupselector.allowchange} AND {PHP.cfg.plugin.usergroupselector.required} --> sr-only<!-- ENDIF -->">
 				<label class="form-control-label col-md-3">{PHP.L.profile_group}:</label>
 				<div class="col-md-9">{USERS_PROFILE_GROUPSELECT}</div>
 			</div>
