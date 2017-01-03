@@ -12,8 +12,7 @@ $R['link_pagenav_prev'] = '<li class="page-item"><a class="page-link" href="{$ur
 $R['input_checkbox'] = '<input type="hidden" name="{$name}" value="{$value_off}" /><label><input type="checkbox" name="{$name}" value="{$value}"{$checked}{$attrs} /> {$title}</label>';
 $R['input_check'] = '<label><input type="checkbox" name="{$name}" value="{$value}"{$checked}{$attrs} /> {$title}</label>';
 $R['input_default'] = '<input class="form-control" type="{$type}" name="{$name}" value="{$value}"{$attrs} />{$error}';
-$R['input_radio'] = '{$options}{$error}';
-$R['input_radio_options'] = '<label><input type="radio" name="{$name}" value="{$value}"{$checked}{$attrs} /> {$title}</label>';
+$R['input_radio'] = '<label><input type="radio" name="{$name}" value="{$value}"{$checked}{$attrs} /> {$title}</label> {$error}';
 $R['input_radio_separator'] = ' ';
 $R['input_select'] = '<select class="form-control c-select" name="{$name}"{$attrs}>{$options}</select>{$error}';
 $R['input_select_option'] = '<option value="{$value}"{$selected}>{$title}</option>';

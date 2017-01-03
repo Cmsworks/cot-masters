@@ -1,128 +1,122 @@
 <!-- BEGIN: MAIN -->
 
-		<div class="block">
-			<h2 class="users">{USERS_EDIT_TITLE}</h2>
-			{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
-			<form action="{USERS_EDIT_SEND}" method="post" name="useredit" enctype="multipart/form-data">
-				<input type="hidden" name="id" value="{USERS_EDIT_ID}" />
-				<table class="cells">
-					<tr>
-						<td class="width30">{PHP.L.users_id}:</td>
-						<td class="width70">#{USERS_EDIT_ID}</td>
-					</tr>
-					<!-- IF {USERS_EDIT_GROUPSELECT} -->
-					<tr>
-						<td>{PHP.L.profile_group}:</td>
-						<td>{USERS_EDIT_GROUPSELECT}</td>
-					</tr>
-					<!-- ENDIF -->
-					<tr>
-						<td>{PHP.L.Username}:</td>
-						<td>{USERS_EDIT_NAME}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.Groupsmembership}:</td>
-						<td>{PHP.L.Maingroup}:<br />&nbsp;{PHP.out.img_down}<br />{USERS_EDIT_GROUPS}</td>
-					</tr>
-					<!-- IF {PHP.cot_plugins_active.locationselector} -->
-					<tr>
-						<td>{PHP.L.Country}:</td>
-						<td>{USERS_EDIT_LOCATION}</td>
-					</tr>
-					<!-- ELSE -->
-					<tr>
-						<td>{PHP.L.Country}:</td>
-						<td>{USERS_EDIT_COUNTRY}</td>
-					</tr>
-					<!-- ENDIF -->
-					<tr>
-						<td>{PHP.L.Timezone}:</td>
-						<td>{USERS_EDIT_TIMEZONE}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.Theme}:</td>
-						<td>{USERS_EDIT_THEME}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.Language}:</td>
-						<td>{USERS_EDIT_LANG}</td>
-					</tr>
-					<!-- IF {USERS_EDIT_AVATAR} -->
-					<tr>
-						<td>{PHP.L.Avatar}:</td>
-						<td>{USERS_EDIT_AVATAR}</td>
-					</tr>
-					<!-- ENDIF -->
-					<!-- IF {USERS_EDIT_SIGNATURE} -->
-					<tr>
-						<td>{PHP.L.Signature}:</td>
-						<td>{USERS_EDIT_SIGNATURE}</td>
-					</tr>
-					<!-- ENDIF -->
-					<!-- IF {USERS_EDIT_PHOTO} -->
-					<tr>
-						<td>{PHP.L.Photo}:</td>
-						<td>{USERS_EDIT_PHOTO}</td>
-					</tr>
-					<!-- ENDIF -->
-					<tr>
-						<td>{PHP.L.users_newpass}:</td>
-						<td>
-							{USERS_EDIT_NEWPASS}
-							<p class="small">{PHP.L.users_newpasshint1}</p>
-						</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.Email}:</td>
-						<td>{USERS_EDIT_EMAIL}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.users_hideemail}:</td>
-						<td>{USERS_EDIT_HIDEEMAIL}</td>
-					</tr>
+<h1 class="m-y-2">{USERS_EDIT_SUBTITLE}</h1>
+<div class="card">
+	<div class="card-block">
+		{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
+		<form action="{USERS_EDIT_SEND}" method="post" name="useredit" enctype="multipart/form-data" class="form-horizontal">
+			<input type="hidden" name="id" value="{USERS_EDIT_ID}" />
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.users_id}:</label>
+				<div class="col-md-9">#{USERS_EDIT_ID}</div>
+			</div>
+			<!-- IF {USERS_EDIT_GROUPSELECT} -->
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.profile_group}:</label>
+				<div class="col-md-9">{USERS_EDIT_GROUPSELECT}</div>
+			</div>
+			<!-- ENDIF -->
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Username}:</label>
+				<div class="col-md-9">{USERS_EDIT_NAME}</div>
+			</div>
+			<!-- IF {PHP.cot_plugins_active.locationselector} -->
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Country}:</label>
+				<div class="col-md-9">{USERS_EDIT_LOCATION}</div>
+			</div>
+			<!-- ELSE -->
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Country}:</label>
+				<div class="col-md-9">{USERS_EDIT_COUNTRY}</div>
+			</div>
+			<!-- ENDIF -->
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Timezone}:</label>
+				<div class="col-md-9">{USERS_EDIT_TIMEZONE}</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Theme}:</label>
+				<div class="col-md-9">{USERS_EDIT_THEME}</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Language}:</label>
+				<div class="col-md-9">{USERS_EDIT_LANG}</div>
+			</div>
+			<!-- IF {USERS_EDIT_AVATAR} -->
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Avatar}:</label>
+				<div class="col-md-9">{USERS_EDIT_AVATAR}</div>
+			</div>
+			<!-- ENDIF -->
+			<!-- IF {USERS_EDIT_SIGNATURE} -->
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Signature}:</label>
+				<div class="col-md-9">{USERS_EDIT_SIGNATURE}</div>
+			</div>
+			<!-- ENDIF -->
+			<!-- IF {USERS_EDIT_PHOTO} -->
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Photo}:</label>
+				<div class="col-md-9">{USERS_EDIT_PHOTO}</div>
+			</div>
+			<!-- ENDIF -->
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.users_newpass}:</label>
+				<div class="col-md-9">
+					{USERS_EDIT_NEWPASS}
+					<p class="small">{PHP.L.users_newpasshint1}</p>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Email}:</label>
+				<div class="col-md-9">{USERS_EDIT_EMAIL}</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.users_hideemail}:</label>
+				<div class="col-md-9">{USERS_EDIT_HIDEEMAIL}</div>
+			</div>
 <!-- IF {PHP.cot_modules.pm} -->
-					<tr>
-						<td>{PHP.L.users_pmnotify}:</td>
-						<td>{USERS_EDIT_PMNOTIFY}<br />{PHP.themelang.usersedit.PMnotifyhint}</td>
-					</tr>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.users_pmnotify}:</label>
+				<div class="col-md-9">{USERS_EDIT_PMNOTIFY}<br />{PHP.themelang.usersedit.PMnotifyhint}</div>
+			</div>
 <!-- ENDIF -->
-					<tr>
-						<td>{PHP.L.Birthdate}:</td>
-						<td>{USERS_EDIT_BIRTHDATE}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.Gender}:</td>
-						<td>{USERS_EDIT_GENDER}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.Signature}:</td>
-						<td>{USERS_EDIT_TEXT}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.Registered}:</td>
-						<td>{USERS_EDIT_REGDATE}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.Lastlogged}:</td>
-						<td>{USERS_EDIT_LASTLOG}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.users_lastip}:</td>
-						<td>{USERS_EDIT_LASTIP}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.users_logcounter}:</td>
-						<td>{USERS_EDIT_LOGCOUNT}</td>
-					</tr>
-					<tr>
-						<td>{PHP.L.users_deleteuser}:</td>
-						<td>{USERS_EDIT_DELETE}</td>
-					</tr>
-					<tr>
-						<td colspan="2" class="valid"><button type="submit">{PHP.L.Update}</button></td>
-					</tr>
-				</table>
-			</form>
-		</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Birthdate}:</label>
+				<div class="col-md-9">{USERS_EDIT_BIRTHDATE}</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Gender}:</label>
+				<div class="col-md-9">{USERS_EDIT_GENDER}</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Signature}:</label>
+				<div class="col-md-9">{USERS_EDIT_TEXT}</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Registered}:</label>
+				<div class="col-md-9">{USERS_EDIT_REGDATE}</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.Lastlogged}:</label>
+				<div class="col-md-9">{USERS_EDIT_LASTLOG}</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.users_lastip}:</label>
+				<div class="col-md-9">{USERS_EDIT_LASTIP}</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.users_logcounter}:</label>
+				<div class="col-md-9">{USERS_EDIT_LOGCOUNT}</div>
+			</div>
+			<div class="form-group row">
+				<label class="form-control-label col-md-3">{PHP.L.users_deleteuser}:</label>
+				<div class="col-md-9">{USERS_EDIT_DELETE}</div>
+			</div>
+			<button type="submit" class="btn btn-success">{PHP.L.Update}</button>
+		</form>
+	</div>
+</div>
 
 <!-- END: MAIN -->

@@ -16,7 +16,3 @@ Schemes=default:Default
  * @license BSD
  */
 
-if($_GET['a'] == 'cwsid') 
-{
-	echo '1';
-}
