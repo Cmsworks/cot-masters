@@ -80,6 +80,10 @@
 				{FILE "{PHP.cfg.themes_dir}/{PHP.usr.theme}/warnings.tpl"}
 				<form action="{PAYOUT_FORM_ACTION_URL}" method="post" id="payoutform" class="form-horizontal">
 					<div class="form-group row">
+						<label class="col-md-3 control-label">{PHP.L.payments_balance_payout_details}:</label>
+						<div class="col-md-6">{PAYOUT_FORM_DETAILS}</div>
+					</div>
+					<div class="form-group row">
 						<label class="col-md-3 control-label">{PHP.L.payments_balance_payout_summ}:</label>
 						<div class="col-md-2">
 						    {PAYOUT_FORM_SUMM}
