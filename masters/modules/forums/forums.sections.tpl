@@ -3,12 +3,12 @@
 		<div class="block">
 			<div class="breadcrumb">{FORUMS_SECTIONS_PAGETITLE}</div>
 <!-- BEGIN: FORUMS_SECTIONS -->
-			<table class="cells">
+			<table class="table table-bordered">
 				<thead>
 					<tr>
 						<td class="coltop" class="width10">&nbsp;</td>
 						<td class="coltop" class="width40">
-							<a href="{PHP|cot_url('forums','c=fold#top')}" rel="nofollow">{PHP.L.forums_foldall}</a><span class="spaced">/</span><a href="{PHP|cot_url('forums','c=unfold#top')}" rel="nofollow">{PHP.L.forums_unfoldall}</a>
+							Разделы
 						</td>
 						<td class="coltop" class="width20">{PHP.L.Lastpost}</td>
 						<td class="coltop" class="width10">{PHP.L.forums_topics}</td>
@@ -20,7 +20,7 @@
 				<tbody id="{FORUMS_SECTIONS_ROW_CAT}">
 					<tr>
 						<td class="forumssection" colspan="6">
-							<a href="{FORUMS_SECTIONS_ROW_SECTIONSURL}" onclick="return toggleblock('blk_{FORUMS_SECTIONS_ROW_CAT}')">{FORUMS_SECTIONS_ROW_TITLE}</a>
+							{FORUMS_SECTIONS_ROW_TITLE}
 						</td>
 					</tr>
 				</tbody>
@@ -54,9 +54,8 @@
 			<!-- END: CAT -->
 			</table>
 <!-- END: FORUMS_SECTIONS -->
-			<p class="paging"><span><a href="{PHP|cot_url('plug','e=search&amp;tab=frm')}">{PHP.L.forums_searchinforums}</a></span><span><a href="{PHP|cot_url('plug','e=forumstats')}">{PHP.L.Statistics}</a></span><span><a href="{PHP|cot_url('forums','n=markall')}" rel="nofollow">{PHP.L.forums_markasread}</a></span></p>
 		</div>
-		<div class="block">
+		<div class="block sr-only">
 			<div class="mboxHD tags">{PHP.L.Tags}</div>
 			{FORUMS_SECTIONS_TAG_CLOUD}
 		</div>

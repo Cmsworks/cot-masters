@@ -15,7 +15,7 @@
 			<div class="breadcrumb">{FORUMS_POSTS_PAGETITLE}</div>
 <!-- BEGIN: FORUMS_POSTS_ADMIN -->
 			<form id="movetopic" action="{FORUMS_POSTS_MOVE_URL}" method="post" class="marginbottom10">
-				<table class="flat">
+				<table class="table table-bordered">
 					<tr>
 						<td class="textright width10">{PHP.L.forums_topicoptions}:</td>
 						<td class="width90">
@@ -35,7 +35,7 @@
 				</table>
 			</form>
 <!-- END: FORUMS_POSTS_ADMIN -->
-			<table class="cells">
+			<table class="table table-bordered">
 				<tr>
 					<td class="coltop width20">{PHP.L.Author}</td>
 					<td class="coltop width80">{PHP.L.Message}</td>
@@ -86,12 +86,12 @@
 
 <!-- BEGIN: FORUMS_POSTS_NEWPOST -->
 		<form action="{FORUMS_POSTS_NEWPOST_SEND}" method="post" name="newpost">
-			<table class="flat">
+			<table class="table table-bordered">
 				<tr>
 					<td>{FORUMS_POSTS_NEWPOST_TEXT}</td>
 				</tr>
 				<tr>
-					<td class="valid"><button type="submit">{PHP.L.Reply}</button></td>
+					<td class="valid"><button type="submit" class="btn btn-success">{PHP.L.Reply}</button></td>
 				</tr>
 			</table>
 		</form>

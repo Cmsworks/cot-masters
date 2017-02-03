@@ -4,7 +4,7 @@
 			<div class="mboxHD forums">{FORUMS_NEWTOPIC_PAGETITLE}</div>
 			{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
 			<form action="{FORUMS_NEWTOPIC_SEND}" method="post" name="newtopic">
-				<table class="cells">
+				<table class="table">
 					<tr>
 						<td class="width20">{PHP.L.Title}:</td>
 						<td class="width80">{FORUMS_NEWTOPIC_TITLE}</td>
@@ -62,7 +62,7 @@
 					</tr>
 <!-- END: FORUMS_NEWTOPIC_TAGS -->
 					<tr>
-						<td colspan="2" class="valid"><button type="submit">{PHP.L.Submit}</button></td>
+						<td colspan="2" class="valid"><button type="submit" class="btn btn-success">{PHP.L.Submit}</button></td>
 					</tr>
 				</table>
 			</form>

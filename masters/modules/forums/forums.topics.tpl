@@ -3,7 +3,7 @@
 		<div class="block">
 			<div class="breadcrumb">{FORUMS_TOPICS_PAGETITLE}</div>
 <!-- BEGIN: FORUMS_SECTIONS -->
-			<table class="cells">
+			<table class="table table-bordered">
 				<tr>
 					<td class="coltop width5"></td>
 					<td class="coltop width45">{PHP.L.Subforums}</td>
@@ -35,14 +35,14 @@
 			</table>
 <!-- END: FORUMS_SECTIONS -->
 
-			<ul id="newf">
-				<li><a href="{FORUMS_TOPICS_NEWTOPICURL}" rel="nofollow">{PHP.L.forums_newtopic}</a></li>
+			<ul id="newf" class="nav m-b-2">
+				<li><a class="btn btn-success" href="{FORUMS_TOPICS_NEWTOPICURL}" rel="nofollow">{PHP.L.forums_newtopic}</a></li>
 				<!-- BEGIN: FORUMS_SECTIONS_POLLS -->
-				<li><a href="{FORUMS_TOPICS_NEWPOLLURL}" rel="nofollow">{PHP.L.forums_newpoll}</a></li>
+				<li><a class="btn btn-success" href="{FORUMS_TOPICS_NEWPOLLURL}" rel="nofollow">{PHP.L.forums_newpoll}</a></li>
 				<!-- END: FORUMS_SECTIONS_POLLS -->
 			</ul>
 
-			<table class="cells">
+			<table class="table table-bordered">
 				<tr>
 					<td class="coltop width5"></td>
 					<td class="coltop width45">{FORUMS_TOPICS_TITLE_TOPICS} / {FORUMS_TOPICS_TITLE_STARTED}</td>
@@ -81,7 +81,7 @@
 		</div>
 		<div class="block">
 			<div class="mboxHD info">{PHP.L.Help}</div>
-			<table class="fico small">
+			<table class="table table-bordered fico small">
 				<tr>
 					<td>{PHP.R.forums_icon_posts}{PHP.L.forums_nonewposts}</td>
 					<td>{PHP.R.forums_icon_posts_new}{PHP.L.forums_newposts}</td>

@@ -5,7 +5,7 @@
 			<!-- IF {FORUMS_EDITPOST_SUBTITLE} --><p class="marginbottom10 small">{FORUMS_EDITPOST_SUBTITLE}</p><!-- ENDIF -->
 			{FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
 			<form action="{FORUMS_EDITPOST_SEND}" method="post" name="editpost">
-				<table class="cells">
+				<table class="table">
 					<!-- BEGIN: FORUMS_EDITPOST_FIRSTPOST -->
 					<tr>
 						<td class="width20">{PHP.L.forums_topic}:</td>
@@ -61,7 +61,7 @@
 					<!-- END: FORUMS_EDITPOST_TAGS -->
 					<tr>
 						<td colspan="2" class="valid">
-							<button type="submit">{PHP.L.Update}</button>
+							<button type="submit" class="btn btn-success">{PHP.L.Update}</button>
 						</td>
 					</tr>
 				</table>
