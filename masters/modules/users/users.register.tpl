@@ -63,7 +63,7 @@
 					<label class="form-control-label col-md-4">{USERS_REGISTER_VERIFYIMG}</label>
 					<div class="col-md-8">{USERS_REGISTER_VERIFYINPUT}</div>
 				</div>
-				<!-- IF {USERS_REGISTER_USERAGREEMENT} -->
+				<!-- IF {PHP.cot_plugins_active.useragreement} -->
 				<div class="form-group text-xs-center">
 					{PHP|cot_checkbox(0, 'ruseragreement', '')} <a href="{PHP|cot_url('plug', 'e=useragreement')}" target="blank">{PHP.L.useragreement_agree}</a>
 				</div>
