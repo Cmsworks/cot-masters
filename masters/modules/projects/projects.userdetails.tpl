@@ -35,6 +35,11 @@
 			
 			<div class="pull-xs-right offers"><a href="{PRJ_ROW_OFFERS_ADDOFFER_URL}">{PRJ_ROW_OFFERS_COUNT|cot_declension($this, 'offers')}</a></div>
 			<div class="type"><!-- IF {PHP.cot_plugins_active.paypro} AND {PRJ_ROW_FORPRO} --><span class="label label-success">{PHP.L.paypro_forpro}</span> <!-- ENDIF --><!-- IF {PRJ_ROW_TYPE} -->{PRJ_ROW_TYPE} / <!-- ENDIF --><a href="{PRJ_ROW_CATURL}">{PRJ_ROW_CATTITLE}</a></div>
+
+			<p>
+				<!-- IF {PHP.cot_plugins_active.payprjtop} AND {PHP.usr.id} == {PHP.urr.user_id} --><div>{PRJ_ROW_PAYTOP}</div><!-- ENDIF -->
+				<!-- IF {PHP.cot_plugins_active.payprjbold} AND {PHP.usr.id} == {PHP.urr.user_id} --><div>{PRJ_ROW_PAYBOLD}</div><!-- ENDIF -->
+			</p>
 		</div>
 	</div>
 	<!-- END: PRJ_ROWS -->
